@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "GoogleSansDisplay";
+  src: url("https://storage.googleapis.com/font-bucket-1/Fonts/GoogleSansDisplay-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GoogleSansDisplay";
+  src: url("https://storage.googleapis.com/font-bucket-1/Fonts/GoogleSansDisplay-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  font-family: "GoogleSansDisplay", sans-serif;
+}
