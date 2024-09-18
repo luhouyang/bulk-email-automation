@@ -10,7 +10,14 @@ Example sheet: [Google Sheets](https://docs.google.com/spreadsheets/d/1eRToFHNEK
 
 1. Modify code, save & run
 
-
 ## Customize Email HTML
 
 [BeeFree](https://beefree.io/) Limited to 6 exports per month, for each account. Youtube tutorial on bulk email [here](https://youtu.be/n0UpPsvyzm8)
+
+##
+
+**Star this repo** &nbsp;
+<picture style="display: inline;">
+    <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f31f/512.webp" type="image/webp">
+    <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f31f/512.gif" alt="🌟" width="16" height="16">
+</picture>
