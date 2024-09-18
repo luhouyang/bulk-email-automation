@@ -10,6 +10,10 @@ Example sheet: [Google Sheets](https://docs.google.com/spreadsheets/d/1eRToFHNEK
 
 1. Modify code, save & run
 
+## Apps Script `MailApp` Class
+
+[Documentation](https://developers.google.com/apps-script/reference/mail/mail-app#sendemailmessage)
+
 ## Customize Email HTML
 
 [BeeFree](https://beefree.io/) Limited to 6 exports per month, for each account. Youtube tutorial on bulk email [here](https://youtu.be/n0UpPsvyzm8)
