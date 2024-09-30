@@ -3,6 +3,10 @@ function sendEmail() {
 
   var lastRow = spreadSheet.getLastRow();
 
+  var my_name = "LU HOU YANG";
+  // +6010-000 0000
+  var my_phone = "+6010-258 0630";
+
   var cc = "luhouyang@gmail.com,luhouyang01@gmail.com";
 
   for (var i = 2; i < lastRow + 1; i++) {
@@ -19,6 +23,8 @@ function sendEmail() {
     message = message.replace('{{Title}}', title);
     message = message.replace('{{Full Name}}', name);
     message = message.replace('{{Organization}}', organization);
+    message = message.replace('{{YOUR_NAME}}', my_name);
+    message = message.replace('{{YOUR_PHONE_NUMBER}}', my_phone);
 
     try {
       MailApp.sendEmail({
