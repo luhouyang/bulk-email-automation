@@ -8,6 +8,7 @@ function sendEmail() {
   var my_phone = "+6010-258 0630";
 
   var cc = "luhouyang@gmail.com,luhouyang01@gmail.com";
+  var bcc = "luhouyang@gmail.com,luhouyang01@gmail.com";
 
   for (var i = 2; i < lastRow + 1; i++) {
     var organization = spreadSheet.getRange(i, 1).getValue();
@@ -17,7 +18,8 @@ function sendEmail() {
 
     var subject = "[Sponsorship Invitation] DevFest George Town 2024";
 
-    var message = HtmlService.createHtmlOutputFromFile("MainTemplate").getContent();
+    // var message = HtmlService.createHtmlOutputFromFile("MainTemplate").getContent();
+    var message = HtmlService.createHtmlOutputFromFile("Alt").getContent();
     // var message = HtmlService.createHtmlOutputFromFile("TemplateWithGoogleSans").getContent();
 
     message = message.replace('{{Title}}', title);
@@ -29,10 +31,13 @@ function sendEmail() {
     try {
       MailApp.sendEmail({
         to: email,
-        cc: cc,
+        // cc: cc,
+        bcc: bcc,
         subject: subject,
         htmlBody: message
       });
+      spreadSheet.getRange(i, 11).setValue("sent");
+      spreadSheet.getRange(i, 12).setValue(Utilities.formatDate(new Date(), "GMT+8", "dd/MM/yyyy"));
     } catch (error) {
       Logger.log(error);
     }
